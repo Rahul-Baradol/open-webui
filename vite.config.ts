@@ -4,6 +4,11 @@ import { defineConfig } from 'vite';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
+	preview: {
+		host: '0.0.0.0',            
+		port: 5173,
+		allowedHosts: ['alaiy--open-web-ui-openwebui-frontend-dev.modal.run', 'localhost'],
+	},
 	plugins: [
 		sveltekit(),
 		viteStaticCopy({
